@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contact — Bibliothèque Numérique</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <div class="brand">
+        <h1>Contact</h1>
+        <p>Contactez-nous pour toute question ou suggestion</p>
+      </div>
+      <nav class="nav" aria-label="Navigation principale">
+        <a href="index.html">Accueil</a>
+        <a href="catalogue.html">Catalogue</a>
+        <a href="apropos.html">À propos</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </header>
+
+    <section class="section">
+      <form id="contactForm" onsubmit="event.preventDefault(); handleContact();">
+        <div style="display:flex;gap:8px;flex-wrap:wrap">
+          <input required placeholder="Nom" id="name" style="flex:1;padding:8px;border-radius:8px;border:1px solid #ddd"/>
+          <input required type="email" placeholder="Email" id="email" style="flex:1;padding:8px;border-radius:8px;border:1px solid #ddd"/>
+        </div>
+        <div style="margin-top:8px">
+          <textarea required id="message" placeholder="Votre message..." rows="6" style="width:100%;padding:8px;border-radius:8px;border:1px solid #ddd"></textarea>
+        </div>
+        <div style="margin-top:8px">
+          <button type="submit">Envoyer</button>
+        </div>
+      </form>
+
+      <h3>Coordonnées</h3>
+      <p>Email : contact@exemple.com</p>
+      <p>Réseaux : <a href="#">Facebook</a> • <a href="#">Twitter</a></p>
+    </section>
+
+    <footer>
+      <p>© 2025 — Bibliothèque Numérique</p>
+    </footer>
+  </div>
+
+  <script>
+    function handleContact(){
+      // Ici on simule l'envoi côté client. Pour production, post vers un serveur.
+      const name = document.getElementById('name').value;
+      const email = document.getElementById('email').value;
+      const message = document.getElementById('message').value;
+      alert('Merci ' + name + ' — votre message a été reçu. (Simulation)');
+      // Reset
+      document.getElementById('contactForm').reset();
+    }
+  </script>
+</body>
+</html>
