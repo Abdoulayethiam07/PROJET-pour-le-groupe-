@@ -1,11 +1,68 @@
 <!doctype html>
-<html lang="en">
+<html lang="fr">
+
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>À propos — Bibliothèque Numérique</title>
-  <link rel="stylesheet" href="styles.css" />
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 2px solid #ccc;
+      padding-bottom: 10px;
+      margin-bottom: 20px;
+      background-color: #e0e0e0;
+    }
+
+    .brand h1 {
+      margin: 1px;
+      font-size: 1.5rem;
+
+    }
+
+    .nav a {
+      margin-left: 15px;
+      text-decoration: none;
+      color: #007BFF;
+      /* text-align: ; */
+    }
+
+    #nav a:hover {
+      text-decoration: underline;
+    }
+
+    #section h2 {
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 5px;
+    }
+
+    #footer {
+      text-align: center;
+      padding: 10px 0;
+      border-top: 2px solid #ccc;
+      margin-top: 20px;
+      font-size: 0.9em;
+      color: #666;
+    }
+  </style>
 </head>
+
 <body>
   <div class="container">
     <header class="header">
@@ -15,29 +72,36 @@
       </div>
       <nav class="nav" aria-label="Navigation principale">
         <a href="index.html">Accueil</a>
-        <a href="catalogue.html">Catalogue</a>
         <a href="apropos.html">À propos</a>
-        <a href="contact.html">Contact</a>
+        <a href="catalogue.html">Catalogue</a>
+        <a href="contacts.html">Contacts</a>
+        <a href="livres.html">Livres</a>
       </nav>
     </header>
 
     <section class="section">
-      <h2>Présentation</h2>
-      <p>Cette bibliothèque numérique permet de consulter un catalogue, lire des extraits et découvrir des œuvres classées par genre et par auteur.</p>
+      <h2>Histoire de l'agence</h2>
+      <p>Cette bibliothèque numérique permet de consulter un catalogue, lire des extraits et découvrir des œuvres
+        classées par genre et par auteur.</p>
 
-      <h3>Objectif du projet</h3>
+      <h2>Mission et valeurs</h2>
       <p>Offrir un accès élargi à la lecture, faciliter la découverte des livres et soutenir l'éducation.</p>
 
-      <h3>Historique</h3>
+      <h2>Photo de l'equipe immobiliere</h2>
       <p>Ce projet a démarré comme une initiative locale pour rendre des ouvrages accessibles en ligne.</p>
 
-      <h3>Équipe</h3>
-      <p>Responsables : ABDOULAYE THIAM, NZIGOU MOULONGI JORDAN ALLEN</p>
+      <h3>Horaire</h3>
+      <p>Responsables : ABDOULAYE THIAM, NZIGOU MOULONGI JORDAN ALLEN , NGWAEYI JUNIOR.</p>
     </section>
 
     <footer>
-      <p>© 2025 — Bibliothèque Numérique</p>
+      <p>&copy; <span id="year"></span> — Bibliothèque Numérique</p>
     </footer>
   </div>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 </body>
+
 </html>
