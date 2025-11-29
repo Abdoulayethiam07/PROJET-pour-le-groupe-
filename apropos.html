@@ -4,25 +4,48 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>À propos — Bibliothèque Numérique</title>
+  <title>Bibliothèque Numérique - Votre savoir à porter de clic</title>
+  <link rel="icon" href="Media/livre-ouvert.png" type="image/x-icon">
+
+  <!-- CSS GLOBAL -->
+  <link rel="stylesheet" href="Styles/styles.css">
+  <!-- CSS LOCAL -->
+  <link rel="stylesheet" href="Styles/style-apropos.css" />
 </head>
 
-<body>
-  <div class="container">
-    <header class="header">
-      <div class="brand">
-        <h1>À propos</h1>
-        <p>Notre mission : promouvoir la lecture et l'accès aux ressources numériques.</p>
-      </div>
-      <nav class="nav" aria-label="Navigation principale">
-        <a href="index.html">Accueil</a>
-        <a href="apropos.html">À propos</a>
-        <a href="catalogue.html">Catalogue</a>
-        <a href="contacts.html">Contacts</a>
-        <a href="livres.html">Livres</a>
-      </nav>
-    </header>
+<body class="apropos">
+  <!-- GLOBAL HEADER  -->
+  <header>
+    <a href="index.html" id="content_logo">
+      <!-- <img src="image apropos\livre-ouvert.png" alt="Logo Bibliothèque Numérique" id="logo"> -->
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" id="logo">
+        <path d="M12 7v14"></path>
+        <path
+          d="M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z">
+        </path>
+      </svg>
+      <h3 id="titre_logo">Bibliothèque Numérique</h3>
+    </a>
 
+    <nav id="content_lien_header">
+      <a href="index.html" class="accueil_item">Accueil</a>
+      <a href="catalogue.html" class="catalogue_item">Catalogue</a>
+      <a href="apropos.html" class="apropos_item">À propos</a>
+      <a href="contacts.html" class="contact_item">Contact</a>
+    </nav>
+  </header>
+
+  <!-- GLOBAL SUB-HEADER -->
+  <section class="sub_header">
+    <div>
+      <h1>À propos</h1>
+      <p>Découvrez notre collection d'ouvrages</p>
+    </div>
+  </section>
+
+  <!-- CONTENT -->
+  <div class="container">
     <section class="section">
       <h2>Histoire de l'agence</h2>
       <p>Cette bibliothèque numérique permet de consulter un catalogue, lire des extraits et découvrir des œuvres
@@ -37,15 +60,13 @@
       <h3>Horaire</h3>
       <p>Responsables : ABDOULAYE THIAM, NZIGOU MOULONGI JORDAN ALLEN , NGWAEYI JUNIOR.</p>
     </section>
-
-    <footer>
-      <p>&copy; <span id="year"></span> — Bibliothèque Numérique</p>
-    </footer>
   </div>
 
-  
+  <!-- GLOBAL FOOTER -->
+  <footer>
+    <p>&copy; 2025 Bibliothèque Numérique. Tous droits réservés.</p>
+  </footer>
 </body>
 
 
 </html>
-

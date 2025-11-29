@@ -1,0 +1,137 @@
+/* #titre {
+    background-color: #1b3c7d;
+    height: 170px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+} */
+
+/* Css zone de filtres de recherche*/
+
+#zone_filtre {
+
+    height: 100px;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    text-emphasis: none;
+}
+
+#bar_search {
+
+    width: 1200px;
+    height: 35px;
+    border-radius: 20px;
+    border: solid 1px gray;
+
+}
+
+#cont_select {
+
+    width: 1200px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.select {
+
+    width: 390px;
+    height: 35px;
+    border-radius: 20px;
+    border: solid 1px grey;
+}
+
+
+/*Css section des livres*/
+
+#liste_livre {
+
+
+
+    width: 1200px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 30px;
+    margin: auto;
+    color: white;
+}
+
+.item_livre {
+
+    height: 455px;
+    background-color: #e4e4e4e8;
+    border-radius: 10px;
+
+}
+
+.haut_item {
+
+    background-color: #133279;
+    height: 85px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.type_livre:hover {
+    cursor: pointer;
+    background-color: white;
+    color: #133279;
+    box-shadow: #d39926 0px 0px 10px;
+    border-radius: 5px;
+}
+
+.type_livre {
+
+    color: white;
+    background-color: #d39926;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+
+}
+h3 {
+    margin-left: 10px;
+    color: white;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+
+}
+
+.bas_item {
+
+    background-color: #133279;
+    height: 90px;
+    margin-top: 270px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.Auteur {
+    margin-left: 10px;
+    color: white;
+    text-align: center;
+    margin-top: 25px;
+}
+
+.titre {
+    margin-left: 10px;
+    color: white;
+    font-size: 18px;
+
+}
+
+.btn_detail {
+
+
+    background-color: white;
+    color: #133279;
+    border: none;
+    border-radius: 20px;
+    margin-top: 15px;
+    cursor: pointer;
+    font-size: 16px;
+
+}

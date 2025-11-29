@@ -1,0 +1,195 @@
+/* SUB-HEADER ACCUEIL : DEBUT */
+.sub_header_index {
+    overflow: hidden;
+    height: 600px;
+    position: relative;
+}
+
+.sub_header_background {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+}
+
+.sub_header_background img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    filter: brightness(0.5);
+    max-width: 100%;
+}
+
+.sub_header_background div {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    background-image: linear-gradient(to right, hsla(220, 70%, 25%, .7), hsla(220, 70%, 25%, .6));
+}
+
+.sub_header_container {
+    color: #f7f4ee;
+    justify-content: center;
+    flex-direction: column;
+    display: flex;
+    position: relative;
+
+    width: 100%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    max-width: 1400px;
+}
+
+.sub_header_container h1 {
+    font-size: 3.75rem;
+    line-height: 1;
+    font-weight: 700;
+    max-width: 48rem;
+
+    margin-top: 0;
+    margin-bottom: 0;
+    animation: fade-in .5s ease-out;
+}
+
+.sub_header_container p {
+    color: hsla(40, 35%, 95%, .9);
+    font-size: 1.5rem;
+    line-height: 2rem;
+    font-weight: 400;
+    max-width: 42rem;
+    margin-bottom: 2rem;
+    animation: fade-in .5s ease-out .25s backwards;
+}
+
+.sub_header_container div {
+    animation-delay: .4s;
+    gap: 1rem;
+    flex-wrap: wrap;
+    animation: fade-in .5s ease-out;
+    display: flex;
+}
+
+.sub_header_button_catalogue {
+    /* transition: background-color 0.3s ease; */
+    transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+    transition-timing-function: cubic-bezier(.4, 0, .2, 1);
+    transition-duration: .15s;
+
+    box-shadow: 0 0 #0000, 0 0 #0000, 0 0 30px hsla(40, 80%, 60%, .3);
+    color: hsl(220, 40%, 15%);
+    font-weight: 500;
+    font-size: .875rem;
+    line-height: 1.25rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+
+    background-color: #f7f4ee;
+    border-radius: .55rem;
+    white-space: nowrap;
+
+    text-decoration: none;
+    cursor: pointer;
+    text-transform: none;
+
+    gap: .5rem;
+    justify-content: center;
+    align-items: center;
+    height: 2.75rem;
+    display: inline-flex;
+}
+
+.sub_header_button_catalogue:hover {
+    background-color: hsl(40, 80%, 60%);
+    box-shadow: 0 0 #0000, 0 0 #0000, 0 0 30px hsla(40, 80%, 60%, .2);
+    color: hsl(220, 40%, 15%);
+}
+
+.sub_header_button_apropos {
+    transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+    transition-timing-function: cubic-bezier(.4, 0, .2, 1);
+    transition-duration: .15s;
+
+    box-shadow: 0 0 #0000, 0 0 #0000, 0 0 30px hsla(220, 70%, 25%, .3);
+    color: #f7f4ee;
+    font-weight: 500;
+    font-size: .875rem;
+    line-height: 1.25rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+
+    background-color: hsla(40, 35%, 95%, .1);
+    outline: 2px solid #f7f4ee;
+    outline-offset: -2px;
+    border-radius: .55rem;
+    white-space: nowrap;
+
+    text-decoration: none;
+    cursor: pointer;
+    text-transform: none;
+
+    gap: .5rem;
+    justify-content: center;
+    align-items: center;
+    height: 2.75rem;
+    display: inline-flex;
+
+    backdrop-filter: blur(4px);
+}
+
+.sub_header_button_apropos:hover {
+    background-color: #f7f4ee;
+    color: hsl(220, 40%, 15%);
+    box-shadow: 0 0 #0000, 0 0 #0000, 0 0 30px hsla(40, 80%, 60%, .2);
+}
+
+
+/* SUB-HEADER ACCUEIL : FIN */
+
+nav.menu a {
+    color: #ffffff;
+    margin: 0 14px 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav.menu a:hover {
+    color: #e8491d;
+    transition: color 0.3s ease;
+    animation: alternate Color 0.5s infinite;
+}
+
+main {
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: grid;
+    grid-area: auto;
+}
+
+.featured-books {
+    display: flex;
+    gap: 20px;
+
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#titre {
+    width: 100%;
+    background-color: #1b3c7d;
+    height: 170px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.ul {
+    list-style-position: inside;
+    color: crimson
+}

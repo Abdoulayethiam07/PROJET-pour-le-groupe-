@@ -4,99 +4,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bibliothèque NUMERIQUE</title>
+    <title>Bibliothèque Numérique - Votre savoir à porter de clic</title>
+    <link rel="icon" href="Media/livre-ouvert.png" type="image/x-icon">
 
+    <!-- CSS GLOBAL -->
+    <link rel="stylesheet" href="Styles/styles.css">
+    <!-- CSS LOCAL -->
+    <link rel="stylesheet" href="Styles/styles-accueil.css">
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-        }
 
-        header {
-            background-color: #35424a;
-            color: #ffffff;
-            padding: 10px 0;
-            text-align: center;
-            background-image: url(https://plus.unsplash.com/premium_photo-1677567996070-68fa4181775a?q=80&w=872&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
-            background-size: cover;
-            background-position: center;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-            border: #35424a solid 5px;
-        }
-
-        nav.menu a {
-            color: #ffffff;
-            margin: 0 14px 15px;
-            text-decoration: none;
-            font-weight: bold;
-        }
-
-        nav.menu a:hover {
-            text-decoration: underline;
-        }
-
-        main {
-            padding: 20px;
-            max-width: 1200px;
-            margin: auto;
-            background-color: #ffffff;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-
-        .fin :hover {
-            background-color: #e8491d;
-            transition: background-color 0.3s ease;
-            animation: alternate Color 0.5s infinite;
-        }
-
-        .fin {
-            border-radius: 10px;
-            color: #ffffff;
-            text-align: center;
-            padding: 10px 0;
-            position: fixed;
-            width: 100%;
-            bottom: 0;
-            background-color: #35424a;
-            margin-top: auto;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            align-self: flex-end;
-        }
-
-        .featured-books {
-            display: flex;
-            gap: 20px;
-            flex-wrap: wrap;
-            width: 100%;
-            box-sizing: border-box;
-        }
     </style>
 </head>
 
-<body>
+<body class="accueil">
+    <!-- GLOBAL HEADER  -->
     <header>
-        <h1><em>BIBLIOTHÈQUE NUMÉRIQUE</em></h1>
-        <nav class="menu" aria-label="Navigation principale">
-            <a href="index.html">Accueil</a>
-            <a href="apropos.html">À propos</a>
-            <a href="catalogue.html">Catalogue</a>
-            <a href="contacts.html">Contacts</a>
-            <a href="livres.html">Livres</a>
+        <a href="index.html" id="content_logo">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" id="logo">
+                <path d="M12 7v14"></path>
+                <path
+                    d="M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z">
+                </path>
+            </svg>
+
+            <h3 id="titre_logo">Bibliothèque Numérique</h3>
+        </a>
+
+        <nav id="content_lien_header">
+            <a href="index.html" class="accueil_item">Accueil</a>
+            <a href="catalogue.html" class="catalogue_item">Catalogue</a>
+            <a href="apropos.html" class="apropos_item">À propos</a>
+            <a href="contacts.html" class="contact_item">Contact</a>
         </nav>
     </header>
 
+    <!-- INDEX SUB-HEADER -->
+    <section class="sub_header_index">
+        <div class="sub_header_background">
+            <img src="Media/hero-library-THnKzBp8.jpg" alt="Bibliothèque numérique">
+            <div></div>
+        </div>
+
+        <div class="sub_header_container">
+            <h1>Votre savoir, à portée de clic</h1>
+            <p>Explorer des milliers d'ouvrages numériques, disponibles 24/7</p>
+            <div>
+                <a href="catalogue.html" class="sub_header_button_catalogue">Explorer le catalogue</a>
+                <a href="apropos.html" class="sub_header_button_apropos">En savoir plus</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTENT  -->
     <main>
-        <h2>Acceuil</h2>
-        <h3>Le savoir, n'as jamais été si accessible.</h3>
+        <h2 class="title_section">Acceuil</h2>
+
         <section class=" livres">
+            <a href="catalogue.html" class="livres_similaires">VOIR PLUS DE LIVRES</a>
             <h2>Livres en vedette</h2>
             <div class="featured-books">
 
-                <!-- Exemple de livre en vedette -->
+                <!-- Exemples de livres en vedette -->
                 <div class="book">
                     <h3>Le Petit Prince</h3>
                     <img src="data:image/jpeg;base64,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"
@@ -161,9 +130,11 @@
         </section>
     </main>
 
-    <footer class="fin">
+    <!-- GLOBAL FOOTER -->
+    <footer>
         <p>&copy; 2025 Bibliothèque Numérique. Tous droits réservés.</p>
     </footer>
+
 </body>
 
 </html>
