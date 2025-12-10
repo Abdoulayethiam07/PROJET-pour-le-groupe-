@@ -170,14 +170,20 @@ main {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     display: grid;
     grid-area: auto;
+    padding-left: ;
 }
 
 .featured-books {
-    display: flex;
-    gap: 20px;
-
     width: 100%;
-    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    margin: auto;
+    color: white;
+    margin-left:0px;
+    padding-left: 0px;
+    
+    
 }
 
 #titre {
