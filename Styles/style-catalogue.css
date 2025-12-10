@@ -16,7 +16,10 @@
     flex-direction: column;
     align-items: center;
     gap: 12px;
+<<<<<<< HEAD
     text-emphasis: none;
+=======
+>>>>>>> 385951f41202349bcca199adba4b582db3bd5fb2
 }
 
 #bar_search {
@@ -55,19 +58,29 @@
     grid-template-columns: repeat(5, 1fr);
     gap: 30px;
     margin: auto;
+<<<<<<< HEAD
     color: white;
+=======
+
+>>>>>>> 385951f41202349bcca199adba4b582db3bd5fb2
 }
 
 .item_livre {
 
+<<<<<<< HEAD
     height: 455px;
     background-color: #e4e4e4e8;
+=======
+    height: 450px;
+    background-color: black;
+>>>>>>> 385951f41202349bcca199adba4b582db3bd5fb2
     border-radius: 10px;
 
 }
 
 .haut_item {
 
+<<<<<<< HEAD
     background-color: #133279;
     height: 85px;
     border-top-left-radius: 5px;
@@ -80,25 +93,43 @@
     color: #133279;
     box-shadow: #d39926 0px 0px 10px;
     border-radius: 5px;
+=======
+    background-color: yellow;
+    height: 90px;
+
+
+>>>>>>> 385951f41202349bcca199adba4b582db3bd5fb2
 }
 
 .type_livre {
 
+<<<<<<< HEAD
     color: white;
     background-color: #d39926;
     border-radius: 5px;
     margin-bottom: 10px;
     margin-left: 20px;
+=======
+
+    background-color: #af242f;
+    border-radius: 15px;
+    margin-bottom: 5px;
+    margin-left: 10px;
+
+>>>>>>> 385951f41202349bcca199adba4b582db3bd5fb2
 
 }
 
 h3 {
     margin-left: 10px;
+<<<<<<< HEAD
     color: white;
     font-size: 20px;
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
 
+=======
+>>>>>>> 385951f41202349bcca199adba4b582db3bd5fb2
 }
 
 .bas_item {
@@ -106,11 +137,18 @@ h3 {
     background-color: #133279;
     height: 90px;
     margin-top: 270px;
+<<<<<<< HEAD
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
 }
 
 .Auteur {
+=======
+    border-radius: 10px;
+}
+
+.autor {
+>>>>>>> 385951f41202349bcca199adba4b582db3bd5fb2
     margin-left: 10px;
     color: white;
     text-align: center;
@@ -120,6 +158,7 @@ h3 {
 .titre {
     margin-left: 10px;
     color: white;
+<<<<<<< HEAD
     font-size: 18px;
 
 }
@@ -135,4 +174,6 @@ h3 {
     cursor: pointer;
     font-size: 16px;
 
+=======
+>>>>>>> 385951f41202349bcca199adba4b582db3bd5fb2
 }

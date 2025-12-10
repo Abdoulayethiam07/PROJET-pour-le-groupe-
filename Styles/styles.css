@@ -115,8 +115,11 @@ header {
     padding-left: 2rem;
     padding-right: 2rem;
     display: block;
+<<<<<<< HEAD
     /* width: 100%; */
     max-width: 1400px;
+=======
+>>>>>>> 385951f41202349bcca199adba4b582db3bd5fb2
 }
 
 .sub_header div h1 {
@@ -136,7 +139,10 @@ header {
 
 /* SUB-HEADER GLOBAL : FIN */
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 385951f41202349bcca199adba4b582db3bd5fb2
 /* FOOTER GLOBAL : DEBUT */
 footer {
     background-color: hsla(40, 20%, 92%, .3);
@@ -161,6 +167,7 @@ footer p {
     line-height: 1.25rem;
 }
 
+<<<<<<< HEAD
 /* FOOTER GLOBAL : FIN */
 
 @keyframes fade-in {
@@ -174,3 +181,6 @@ footer p {
         transform: translateY(0)
     }
 }
+=======
+/* FOOTER GLOBAL : FIN */
+>>>>>>> 385951f41202349bcca199adba4b582db3bd5fb2
