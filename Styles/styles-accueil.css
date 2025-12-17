@@ -28,7 +28,7 @@
     bottom: 0;
     left: 0;
     position: absolute;
-    background-image: linear-gradient(to right, hsla(220, 70%, 25%, .7), hsla(220, 70%, 25%, .6));
+    background-image: linear-gradient(to right, hsla(220, 70%, 25%, .7), hsla(220, 70%, 25%, 0.6));
 }
 
 .sub_header_container {
@@ -182,7 +182,7 @@ main {
 
 }
 
-.title_section {
+/* .title_section { */
     /* width: 100%; */
     /* background-color: #1b3c7d; */
     /* height: 170px; */
@@ -190,7 +190,7 @@ main {
     
     
 
-}
+
 
 /* #titre {
     width: 100%;
