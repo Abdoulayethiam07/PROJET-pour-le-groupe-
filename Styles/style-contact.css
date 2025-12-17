@@ -161,8 +161,18 @@
 }
 
 .container_info_social a:hover {
-    color: hsl(220, 20%, 17%);
+    /* color: hsl(220, 20%, 17%); */
     text-decoration: underline;
+    color: transparent;
+    color: transparent;
+    background: linear-gradient(to right,
+            red 0%,
+            pink 30%,
+            #eb3467 55%,
+            #cf3030 70%,
+            #f1c659 85%,
+            #ebb447 100%);
+    background-clip: text;
 }
 
 
@@ -193,3 +203,21 @@
     font-size: .875rem;
     line-height: 1.25rem;
 }
+/* 
+.Facebook:hover{
+    color: blue;
+}
+.Twitter:hover{
+    color: aqua;
+}
+.Instagram:hover{
+    /* color: transparent; 
+    background: linear-gradient(to right,
+            red 0%,
+            pink 30%,
+            #eb3467 55%,
+            #cf3030 70%,
+            #f1c659 85%,
+            #ebb447 100%);
+    background-clip: text; */
+

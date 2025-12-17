@@ -170,6 +170,7 @@ main {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     display: grid;
     grid-area: auto;
+    padding-left: 22px;
 }
 
 .featured-books {
@@ -178,18 +179,35 @@ main {
 
     width: 100%;
     box-sizing: border-box;
+
 }
 
-#titre {
+.title_section {
+    /* width: 100%; */
+    /* background-color: #1b3c7d; */
+    /* height: 170px; */
+    /* color: #ffffff; */
+    
+    
+
+}
+
+/* #titre {
     width: 100%;
     background-color: #1b3c7d;
     height: 170px;
     align-items: center;
     display: flex;
-    flex-direction: column;
-}
+    flex-direction: column; */
+/* } */
 
 .ul {
     list-style-position: inside;
-    color: crimson
+    color: crimson;
+}
+.liens_utiles{
+    justify-content: center;
+    text-align: center;
+    color: #ffffff;
+    
 }

@@ -1,0 +1,16 @@
+.type_livre {}
+
+.similarList {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.section {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+
+}
+.haut_item{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}

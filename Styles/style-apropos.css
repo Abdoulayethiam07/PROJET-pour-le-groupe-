@@ -1,0 +1,38 @@
+.container {
+    padding: auto;
+    margin: auto;
+    margin-left: 66px;
+    display: block;
+    padding-top: 2rem;
+    margin-right: auto;
+    margin-left: auto;
+
+    max-width: 1400px;
+    animation: fade-in .5s ease-out;
+
+
+
+}
+
+
+@container (min-width: 768px) {
+    .container_content {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        display: grid;
+        gap: 3rem;
+    }
+}
+
+.valeurs div {
+    grid-template-columns: repeat(3, minmax(0, 200px));
+    display: inline-block;
+    block-size: auto;
+    z-index: inherit;
+    gap: 22rem;
+    width: 250px;
+    padding-left: 200px;
+    background-color: #ffffffdb;
+    border-radius: 10px;
+    justify-content: center; 
+
+}
