@@ -1,3 +1,15 @@
+body {
+    /* cursor: none; */
+}
+
+.curseur {
+    position: fixed;
+    width: 180px;
+    height: 180px;
+    pointer-events: none;
+    background: url("../Media/5d903aa1cc5fde647e4055b4a46380ed.gif") no-repeat center/contain;
+}
+
 .container {
     padding-top: 2rem;
 
@@ -8,6 +20,7 @@
 
     max-width: 1400px;
 }
+
 
 @media (min-width: 768px) {
     .container_content {
@@ -203,6 +216,7 @@
     font-size: .875rem;
     line-height: 1.25rem;
 }
+
 /* 
 .Facebook:hover{
     color: blue;
@@ -220,4 +234,3 @@
             #f1c659 85%,
             #ebb447 100%);
     background-clip: text; */
-
