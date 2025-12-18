@@ -26,12 +26,13 @@ header{
     
     
     
-
+/* 
 #logo{ 
 
     width: 35px; 
-    height: 25px; /*dimenssioné le logo*/
+    height: 25px; 
 }
+*/
 
 
 /* #titre_logo{
@@ -53,24 +54,26 @@ header{
 
 }
  */
-
-#content_logo{ /* c'est pour la div qui contient l'ensemble du logo*/
+/*
+#content_logo{ /* c'est pour la div qui contient l'ensemble du logo
 
     display: flex;
     align-items: center;
     margin-left: 30px;
     
 }
+*/
 
-#content_lien_header{ /*pour la div qui contient les lien (contact, apropos...)*/
+/*
+#content_lien_header{ /*pour la div qui contient les lien (contact, apropos...)
 
     display: flex;
-    justify-content: space-between; /*creer un meme espace entre les lien*/
-    gap: 20px; /* specifié la taille des espace entre les liens*/
+    justify-content: space-between; 
+    gap: 20px; 
     margin-left: 610px;
 }
 
-.lien_header{ /* pour stylisé les liens*/
+.lien_header{ 
 
     color: #334567;
     text-decoration: none;
@@ -180,7 +183,8 @@ header{
 
     height: 450px;
     border-radius: 10px;
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;  
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    margin-bottom: 10px;  
     
 }
 
@@ -199,6 +203,8 @@ header{
     background-color: white;  
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
+    padding-bottom: 5px;
+    
     
     
 }
@@ -261,7 +267,7 @@ h3{
 }
 
 
-/*Css Du Footer*/
+/*Css Du Footer
 
 
 #footer{
@@ -338,4 +344,5 @@ h3{
     height: 35px;
     
 }
+*/
 
