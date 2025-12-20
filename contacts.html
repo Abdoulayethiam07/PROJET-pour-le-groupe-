@@ -99,7 +99,7 @@
         <div>
           <h2>Suivez-nous</h2>
           <div class="container_info_social">
-            <a class="Facebook" href="#" >Facebook</a>
+            <a class="Facebook" href="#">Facebook</a>
             <a class="Twitter" href="#">Twitter/X</a>
             <a class="Instagram" href="#">Instagram</a>
           </div>
@@ -121,6 +121,17 @@
   <footer>
     <p>&copy; 2025 Bibliothèque Numérique. Tous droits réservés.</p>
   </footer>
+
+  <div class="curseur"></div>
+
+  <script>
+    const curseur = document.querySelector('.curseur');
+
+    document.addEventListener('mousemove', e => {
+      curseur.style.left = e.clientX + 'px';
+      curseur.style.top = e.clientY + 'px';
+    });
+  </script>
 </body>
 
 </html>
