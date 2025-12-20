@@ -1,6 +1,4 @@
-body {
-    /* cursor: none; */
-}
+
 
 .curseur {
     position: fixed;
@@ -234,3 +232,8 @@ body {
             #f1c659 85%,
             #ebb447 100%);
     background-clip: text; */
+
+h3{
+
+    color: blue;
+}
