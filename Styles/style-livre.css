@@ -17,20 +17,34 @@
 */
 
 /* CSS section info livre*/
+
+main{
+
+    
+    width: 170vh;
+    height: 85vh;
+    margin: auto;
+    position: relative;
+    overflow: hidden;
+}
+
 .content{
 
     background-color: white;
-    height: 500px;
+    height: 100%;
     display: grid;
     grid-template-columns: 600px 330px;
     gap: 22px;
-    width: 77.5%;
-    margin: auto;
+    width: 100%;
     margin-top: 10px;
     border-radius: 2px;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
     margin-bottom: 30px;
-    position: relative;
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    
+    
 }
 
 .section_info_livre{
@@ -52,6 +66,15 @@
 .cont_image_livre{
 
     width: 36%;
+    overflow: hidden;
+    height: 300px;
+}
+
+.img_livre{
+
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
 }
 
 .info_livre{
@@ -175,12 +198,9 @@ overflow: hidden;
     height: 100%;
 }
 
-.content{
-
-    display: none;
-}
-
 .content:target{
 
-    display: block;
+    opacity: 1;
+    visibility: visible;
 }
+
