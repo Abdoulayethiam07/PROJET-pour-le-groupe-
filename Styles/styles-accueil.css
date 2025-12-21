@@ -3,6 +3,8 @@
     overflow: hidden;
     height: 600px;
     position: relative;
+    unicode-bidi: isolate;
+
 }
 
 .sub_header_background {
@@ -12,6 +14,7 @@
     left: 0;
     position: absolute;
 }
+
 
 .sub_header_background img {
     width: 100%;
@@ -28,7 +31,7 @@
     bottom: 0;
     left: 0;
     position: absolute;
-    background-image: linear-gradient(to right, hsla(220, 70%, 25%, .7), hsla(220, 70%, 25%, .6));
+    background-image: linear-gradient(to right, hsla(220, 70%, 25%, .7), hsla(220, 70%, 25%, 0.6));
 }
 
 .sub_header_container {
@@ -45,6 +48,7 @@
     padding-left: 2rem;
     padding-right: 2rem;
     max-width: 1400px;
+    
 }
 
 .sub_header_container h1 {
@@ -149,6 +153,29 @@
     box-shadow: 0 0 #0000, 0 0 #0000, 0 0 30px hsla(40, 80%, 60%, .2);
 }
 
+.avantages {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.5rem;
+    padding: 3rem 5%;
+    background-color: #e2dfd5;
+}
+
+.avantage {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+    transition: transform 0.3s ease;
+}
+
+.avantage:hover {
+    transform: translateY(-6px);
+}
+
+
+
 
 /* SUB-HEADER ACCUEIL : FIN */
 
@@ -173,24 +200,66 @@ main {
     padding-left: 22px;
 }
 
-.featured-books {
+#liste_livre {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2rem;
+  padding: 2rem 5%;
+}
+
+.book {
+  background: rgb(235, 238, 246);
+  padding: 1rem;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.book:hover {
+  transform: translateY(-5px);
+}
+
+.book img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+
+/* .featured-books {
     display: flex;
-    gap: 20px;
+    flex-wrap: wrap;
+    gap: 1rem;
+    /* gap: 20px; */
 
-    width: 100%;
+    /* width: 100%;
     box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; */
 
+/* } */ 
+
+.featured-books:hover {
+
+    transform: scale(1.1);
+    /* c'est pour faire groossir l'image quand la souris la survole*/
+    transition: transform 0.5s ease;
+    /* pour modifier la vitesse de la transformation*/
 }
 
-.title_section {
-    /* width: 100%; */
-    /* background-color: #1b3c7d; */
-    /* height: 170px; */
-    /* color: #ffffff; */
-    
-    
 
-}
+
+/* .title_section { */
+/* width: 100%; */
+/* background-color: #1b3c7d; */
+/* height: 170px; */
+/* color: #ffffff; */
+
+
+
+
 
 /* #titre {
     width: 100%;
@@ -205,9 +274,10 @@ main {
     list-style-position: inside;
     color: crimson;
 }
-.liens_utiles{
+
+.liens_utiles {
     justify-content: center;
     text-align: center;
     color: #ffffff;
-    
+
 }

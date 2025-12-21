@@ -1,143 +1,195 @@
-/* #titre {
-    background-color: #1b3c7d;
-    height: 170px;
-    align-items: center;
-    display: flex;
-    flex-direction: column;
+/* body {
+
+    margin: 0;
+    padding: 0;
+    background-color: #f9f8f5;
+    width: 100%;
+    max-width: 100%;
+
+
 } */
+
+
+
+/* #titre { */
+
+/* width: 100%; */
+/* background-color: #1b3c7d; */
+/* background-color: hsl(220, 70%, 25%);
+    height: 170px;
+    align-items: left;
+    display: flex;
+    flex-direction: column; */
+/* font-size: clamp(1.5rem, 5vw, 3rem); */
+
+
+
+/* } */
 
 /* Css zone de filtres de recherche*/
 
 #zone_filtre {
-
-    height: 100px;
     margin-top: 30px;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 12px;
-    text-emphasis: none;
+    padding: 0 1rem;
+}
+
+.paragraph {
+    padding-left: 50px;
+    cursor: pointer;
 }
 
 #bar_search {
-
-    width: 1200px;
+    width: 100%;
+    max-width: 1200px;
     height: 35px;
-    border-radius: 20px;
-    border: solid 1px gray;
-
-
-
-}
-
-#bar_search:hover {
-    cursor: pointer;
-    color: #999;
-    font-style: italic;
-
+    border-radius: 10px;
+    border: 1px solid gray;
+    padding: 10px;
 }
 
 #cont_select {
-
-    width: 1200px;
+    width: 100%;
+    max-width: 1200px;
     display: flex;
-    justify-content: space-between;
+    gap: 12px;
 }
 
 .select {
-
-    width: 390px;
+    width: 100%;
     height: 35px;
-    border-radius: 20px;
-    border: solid 1px grey;
+    border-radius: 10px;
+    border: 1px solid grey;
 }
 
 
 /*Css section des livres*/
 
 #liste_livre {
-
-
-
-    width: 1200px;
+    width: 80%;
+    max-width: 1200px;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 40px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 34px;
     margin: auto;
-    color: white;
+    padding: 1rem;
 }
+
+.cont_img_livres {
+
+    height: 270px;
+    overflow: hidden;
+    /* pour que l'image ne depasse pas la div quand elle grossi*/
+
+}
+
+.img_livres {
+
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.img_livres:hover {
+
+    transform: scale(1.1);
+    /* c'est pour faire groossir l'image quand la souris la survole*/
+    transition: transform 0.5s ease;
+    /* pour modifier la vitesse de la transformation*/
+}
+
 
 .item_livre {
 
-    /* height: 455px;
-    background-color: #e4e4e4e8;
+    height: 450px;
     border-radius: 10px;
-    wid; */
-width:200px;
-height: auto;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    margin-bottom: 10px;
 
+}
+
+.item_livre:hover {
+    transform: scale(1.02);
+    transition: transform 0.5s ease;
 }
 
 .haut_item {
 
-    background-color: #133279;
-    height: 85px;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
-}
 
-.type_livre:hover {
-    cursor: pointer;
+    height: 90px;
     background-color: white;
-    color: #133279;
-    box-shadow: #d39926 0px 0px 10px;
-    border-radius: 5px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    padding-bottom: 5px;
+
+
+
 }
 
 .type_livre {
 
-    color: white;
-    background-color: #d39926;
-    border-radius: 5px;
-    margin-bottom: 10px;
-    margin-left: 20px;
+    text-decoration: none;
+    font-size: 13px;
+    color: black;
 
 }
 
+.cont_type_livre {
+
+
+    display: inline-block;
+    border-radius: 12px;
+    padding-right: 10px;
+    padding-left: 10px;
+    background-color: #ebb447;
+    margin-left: 7px;
+    margin-top: 7px;
+
+}
+
+.type_livre:hover {
+
+    box-shadow: #efc36c 0px 7px 29px 0px;
+}
+
+.nom_livre {
+
+    text-decoration: none;
+    color: black;
+}
+
+.prix {
+
+    margin-left: 10px;
+}
 
 
 .bas_item {
 
-    background-color: #133279;
+
     height: 90px;
-    margin-top: 270px;
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
-}
-
-.Auteur {
-    margin-left: 10px;
-    color: white;
-    text-align: center;
-    margin-top: 25px;
-}
-
-.titre {
-    margin-left: 10px;
-    color: white;
-    font-size: 18px;
-
-}
-
-.btn_detail {
-
-
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
     background-color: white;
-    color: #133279;
-    border: none;
-    border-radius: 20px;
-    margin-top: 15px;
-    cursor: pointer;
-    font-size: 16px;
+}
 
+.info_livre {
+
+    font-size: 14px;
+    color: gray;
+    margin-left: 10px;
+}
+
+
+@media (max-width: 768px) {
+    #cont_select {
+        flex-direction: column;
+    }
+
+    .item_livre {
+        height: auto;
+    }
 }

@@ -5,6 +5,8 @@ body {
     font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", Segoe UI Symbol, "Noto Color Emoji";
     background-color: hsl(40, 20%, 97%);
     color: hsl(220, 40%, 15%);
+    unicode-bidi: isolate;
+
 }
 
 /* NAV BAR ACTIONS : DEBUT */
@@ -63,6 +65,7 @@ header {
     font-weight: 700;
 
     text-decoration: none;
+    
 }
 
 #logo {
