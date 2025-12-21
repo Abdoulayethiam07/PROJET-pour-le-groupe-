@@ -1,225 +1,145 @@
-body{
+/* body {
 
     margin: 0;
     padding: 0;
-    background-color:  #f9f8f5;
-    
-    
-}
-
-
-
-/*Debut CSS du header*/
-
-/* 
-header{
-
-    height: 65px;
     background-color: #f9f8f5;
-    opacity: 0.96;
-    display: flex;
-    align-items: center; /* pour centrer tous les ellement sur Y dans le header*/
-    /* position: sticky;
-    width: 100%; */
-    /* top: 0;
-    z-index: 1000; /* c'est pour que le header reste visible au deçu des autres ellements*/
-    
-    
-    
-/* 
-#logo{ 
-
-    width: 35px; 
-    height: 25px; 
-}
-*/
-
-
-/* #titre_logo{
-
-    margin-left: 5px;
-    color: transparent;
-    background: linear-gradient(to right,
-
-    #053094 0%,
-    #0a3aaa 30%,
-    #4e6394 55%,
-    #d1a665 70%,
-    #e6af27 85%,
-    #fabf0d 100% 
-    );
-
-    background-clip: text;
-
-
-}
- */
-/*
-#content_logo{ /* c'est pour la div qui contient l'ensemble du logo
-
-    display: flex;
-    align-items: center;
-    margin-left: 30px;
-    
-}
-*/
-
-/*
-#content_lien_header{ /*pour la div qui contient les lien (contact, apropos...)
-
-    display: flex;
-    justify-content: space-between; 
-    gap: 20px; 
-    margin-left: 610px;
-}
-
-.lien_header{ 
-
-    color: #334567;
-    text-decoration: none;
-}
-
-.lien_header:hover{
-
-    color: #efc36c;
-}
-
-
-
-/* Fin CSS du Header*/
-
-
-
-#titre{
-
     width: 100%;
-    /* background-color: #1b3c7d; */
-    background-color: hsl(220, 70%, 25%);
+    max-width: 100%;
+
+
+} */
+
+
+
+/* #titre { */
+
+/* width: 100%; */
+/* background-color: #1b3c7d; */
+/* background-color: hsl(220, 70%, 25%);
     height: 170px;
     align-items: left;
     display: flex;
-    flex-direction: column;
-    
-    
-}
+    flex-direction: column; */
+/* font-size: clamp(1.5rem, 5vw, 3rem); */
+
+
+
+/* } */
 
 /* Css zone de filtres de recherche*/
 
-#zone_filtre{
-
-    height: 100px;
+#zone_filtre {
     margin-top: 30px;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 12px;
+    padding: 0 1rem;
 }
 
-#bar_search{
+.paragraph {
+    padding-left: 50px;
+    cursor: pointer;
+}
 
-    width: 1200px;
+#bar_search {
+    width: 100%;
+    max-width: 1200px;
     height: 35px;
-    border-radius: 20px;
-    border: solid 1px gray;
+    border-radius: 10px;
+    border: 1px solid gray;
     padding: 10px;
-    
 }
 
-#cont_select{
-
-    width: 1200px;
+#cont_select {
+    width: 100%;
+    max-width: 1200px;
     display: flex;
-    justify-content: space-between;
-    
+    gap: 12px;
 }
 
-.select{
-
-    width: 390px;
+.select {
+    width: 100%;
     height: 35px;
-    border-radius: 20px;
-    border: solid 1px grey;   
+    border-radius: 10px;
+    border: 1px solid grey;
 }
 
 
 /*Css section des livres*/
 
-#liste_livre{
-
-    
-
-    width: 1200px;
+#liste_livre {
+    width: 80%;
+    max-width: 1200px;
     display: grid;
-    grid-template-columns: repeat(5,1fr);
-    gap: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 34px;
     margin: auto;
-    
-   
+    padding: 1rem;
 }
 
-.cont_img_livres{
+.cont_img_livres {
 
     height: 270px;
-    overflow: hidden; /* pour que l'image ne depasse pas la div quand elle grossi*/
-    
+    overflow: hidden;
+    /* pour que l'image ne depasse pas la div quand elle grossi*/
+
 }
 
-.img_livres{
+.img_livres {
 
     width: 100%;
     height: 100%;
-    object-fit: cover; 
-
+    object-fit: cover;
 }
 
-.img_livres:hover{
+.img_livres:hover {
 
-    transform: scale(1.1); /* c'est pour faire groossir l'image quand la souris la survole*/
-    transition: transform 0.5s ease; /* pour modifier la vitesse de la transformation*/
+    transform: scale(1.1);
+    /* c'est pour faire groossir l'image quand la souris la survole*/
+    transition: transform 0.5s ease;
+    /* pour modifier la vitesse de la transformation*/
 }
 
 
-.item_livre{
+.item_livre {
 
     height: 450px;
     border-radius: 10px;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
-    margin-bottom: 10px;  
-    
+    margin-bottom: 10px;
+
 }
 
-.item_livre:hover{
-
-   
-   transform: scale(1.02);
-   transition: transform 0.5s ease; 
-    
+.item_livre:hover {
+    transform: scale(1.02);
+    transition: transform 0.5s ease;
 }
 
-.haut_item{
+.haut_item {
 
-    
+
     height: 90px;
-    background-color: white;  
+    background-color: white;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     padding-bottom: 5px;
-    
-    
-    
+
+
+
 }
 
-.type_livre{
-  
+.type_livre {
+
     text-decoration: none;
     font-size: 13px;
     color: black;
-    
+
 }
 
-.cont_type_livre{
+.cont_type_livre {
 
-    
+
     display: inline-block;
     border-radius: 12px;
     padding-right: 10px;
@@ -227,39 +147,36 @@ header{
     background-color: #ebb447;
     margin-left: 7px;
     margin-top: 7px;
-    
+
 }
 
-.type_livre:hover{
+.type_livre:hover {
 
     box-shadow: #efc36c 0px 7px 29px 0px;
 }
 
-.nom_livre{
+.nom_livre {
 
     text-decoration: none;
     color: black;
 }
 
-.prix{
+.prix {
 
     margin-left: 10px;
 }
 
-h3{
-    margin-left: 10px;
-}
 
-.bas_item{
+.bas_item {
 
-    
+
     height: 90px;
     border-bottom-right-radius: 10px;
     border-bottom-left-radius: 10px;
     background-color: white;
 }
 
-.info_livre{
+.info_livre {
 
     font-size: 14px;
     color: gray;
@@ -267,82 +184,12 @@ h3{
 }
 
 
-/*Css Du Footer
+@media (max-width: 768px) {
+    #cont_select {
+        flex-direction: column;
+    }
 
-
-#footer{
-
-    height: 250px;
-    width: 100%;
-    background-color:  #f9f8f5;
-    margin-top: 80px;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    .item_livre {
+        height: auto;
+    }
 }
-
-#footer_l1{
-
-    width: 100%;
-    height: 100px;
-    display: flex;
-    border-bottom: solid 1px gray;
-}
-
-#content_nom{
-
-    width: 35%;
-    height: 100px;
-    display: flex;
-    justify-content: space-evenly;
-    border-right: solid 1px gray;
-  
-}
-
-#content_lien_footer{
-
-   
-    display: flex;
-    width: 35%;
-    margin-left: auto;
-    justify-content: space-around;
-    align-items: center;
-
-}
-
-#footer_l2{
-
-
-    width: 100%;
-    height: 150px;
-    display: flex;
-}
-
-#logo_footer{
-
-    display: flex;
-    align-items: center;
-    margin-left: 30px;
-    height: 150px;
-    width: 45%;
-    border-right: solid 1px gray;
-    
-}
-
-#lien_contact{
-
-    height: 150px;
-    width: 35%;
-    justify-content: space-around;
-    display: flex;
-    align-items: center;
-    margin:auto;
-    
-}
-
-.img_reseaux{
-
-    width: 35px;
-    height: 35px;
-    
-}
-*/
-

@@ -20,63 +20,35 @@
     <link rel="stylesheet" href="Styles/style-catalogue.css" />
 </head>
 
-<body>
+<body class="catalogue">
 
-    <!-- <header>
-
-        <div id="content_logo"> 
-            <img src="image catalogue\livre-ouvert.png" alt="" id="logo"> <H3 id="titre_logo">Bibliotheque Numérique</H3>
-        </div>
-
-        <nav id="content_lien_header">         A remplacé pars une balise nav-->
-    <!-- <a href="" class="lien_header">Acceuil</a>
-            <a href="" class="lien_header">Catalogue</a>
-            <a href="" class="lien_header">A propos</a>
-            <a href="" class="lien_header">Contact</a>
-        </nav>
-    </header> -->
     <header>
-
         <a href="index.html" id="content_logo">
-
             <!-- <img src="image apropos\livre-ouvert.png" alt="Logo Bibliothèque Numérique" id="logo"> -->
-
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                 stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" id="logo">
-
                 <path d="M12 7v14"></path>
-
                 <path
                     d="M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z">
-
                 </path>
-
             </svg>
-
             <h3 id="titre_logo">Bibliothèque Numérique</h3>
-
         </a>
 
         <nav id="content_lien_header">
-
             <a href="index.html" class="accueil_item">Accueil</a>
-
             <a href="catalogue.html" class="catalogue_item">Catalogue</a>
-
             <a href="apropos.html" class="apropos_item">À propos</a>
-
             <a href="contacts.html" class="contact_item">Contact</a>
-
         </nav>
-
     </header>
 
-    <div id="titre">
-
-        <H1 style="color: white;">Notre Collection Complette</H1>
-        <p style="color: white; font-size: 18px;">Decouvrez ici notre Catalogue</p>
-
-    </div>
+    <section class="sub_header">
+        <div>
+            <h1>Notre Collection Complète</H1>
+            <p>Découvrez ici notre Catalogue</p>
+        </div>
+    </section>
 
     <section id="zone_filtre">
 
@@ -93,8 +65,6 @@
                 <option value="">Fiction</option>
                 <option value="">Developement personel</option>
             </select>
-
-
 
             <select name="Auteurs" id="auteurs" class="select">
                 <option value="">Tous les Auteurs</option>
@@ -142,14 +112,9 @@
                 <option>2025</option>
             </select>
         </div>
-
     </section>
 
-    <P style="color: gray; margin-left: 24px;">Bonne lecture</P>
-
-
-
-
+    <P class="paragraph" style="color: gray; margin-left: 110px;">13 Livres trouvés...</P>
 
     <section id="liste_livre">
 
