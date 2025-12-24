@@ -48,7 +48,7 @@
     padding-left: 2rem;
     padding-right: 2rem;
     max-width: 1400px;
-    
+
 }
 
 .sub_header_container h1 {
@@ -163,6 +163,7 @@
 
 .avantage {
     background: white;
+    /* background-color: #f8f4e8ea; */
     padding: 1.5rem;
     border-radius: 12px;
     text-align: center;
@@ -200,57 +201,56 @@ main {
     padding-left: 22px;
 }
 
-#liste_livre {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+/* #liste_livre {
+    display: inline-flex; */
+/* grid-template-columns: repeat(none, minmax(200px, 3fr)); */
+/* gap: 2rem; */
 
-  /* grid-template-columns: repeat(none, minmax(200px, 3fr)); */
-  gap: 2rem;
-  padding: 2rem 5%;
-}
+/* }
 
 .book {
-  background: rgb(235, 238, 246);
-  padding: 1rem;
-  border-radius: 12px;
-  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
-  text-align: center;
-  transition: transform 0.3s ease;
-  width: auto;
-  height: auto;
+    background: rgb(235, 238, 246);
+    padding: 1rem;
+    border-radius: 12px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+    text-align: center;
+    transition: transform 0.3s ease;
+    width: auto;
+    height: auto;
 }
 
 .book:hover {
-  transform: translateY(-5px);
-}
+    transform: translateY(-5px);
+} */
 
-.book img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 8px;
-}
+/* .book img { */
+/* max-width: 100%; */
+/* width: 33px; */
+/* height: 100%; */
+/* border-radius: px; */
+/* } */
 
-
- .featured-books { 
+/* 
+.featured-books {
     display: flex;
     flex-wrap: wrap;
     gap: 1rem;
-    gap: 20px; 
+    gap: 20px;
     width: 100%;
     box-sizing: border-box;
     width: 100%;
     height: 100%;
-    object-fit: cover; 
+    object-fit: cover;
 
-} 
+}
 
 .featured-books:hover {
 
     transform: scale(1.1);
     /* c'est pour faire groossir l'image quand la souris la survole*/
-    transition: transform 0.5s ease;
-    /* pour modifier la vitesse de la transformation*/
-}
+/* transition: transform 0.5s ease; */
+/* pour modifier la vitesse de la transformation*/
+/* } */
 
 
 
@@ -272,6 +272,141 @@ main {
     display: flex;
     flex-direction: column; */
 /* } */
+
+
+
+#forme_image {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+#liste_livre {
+    width: 80%;
+    max-width: 1200px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 34px;
+    margin: auto;
+    padding: 1rem;
+}
+
+.cont_img_livres {
+
+    height: 350px;
+    overflow: hidden;
+
+    /* pour que l'image ne depasse pas la div quand elle grossi*/
+
+}
+
+.img_livres {
+
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.img_livres:hover {
+
+    transform: scale(1.1);
+    /* c'est pour faire groossir l'image quand la souris la survole*/
+    transition: transform 0.5s ease;
+    /* pour modifier la vitesse de la transformation*/
+}
+
+
+.item_livre {
+
+    height: 550px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    margin-bottom: 10px;
+
+}
+
+.item_livre:hover {
+    transform: scale(1.02);
+    transition: transform 0.5s ease;
+}
+
+.haut_item {
+
+
+    height: 90px;
+    background-color: white;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    padding-bottom: 5px;
+
+
+
+}
+
+.type_livre {
+
+    text-decoration: none;
+    font-size: 13px;
+    color: black;
+
+}
+
+.cont_type_livre {
+
+
+    display: inline-block;
+    border-radius: 12px;
+    padding-right: 10px;
+    padding-left: 10px;
+    background-color: #ebb447;
+    margin-left: 7px;
+    margin-top: 7px;
+
+}
+
+.type_livre:hover {
+
+    box-shadow: #efc36c 0px 7px 29px 0px;
+}
+
+.nom_livre {
+
+    text-decoration: none;
+    color: black;
+}
+
+.prix {
+
+    margin-left: 10px;
+}
+
+
+.bas_item {
+
+
+    height: 90px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background-color: white;
+}
+
+.info_livre {
+
+    font-size: 14px;
+    color: gray;
+    margin-left: 10px;
+}
+
+
+@media (max-width: 768px) {
+    #cont_select {
+        flex-direction: column;
+    }
+
+    .item_livre {
+        height: auto;
+    }
+}
 
 .ul {
     list-style-position: inside;

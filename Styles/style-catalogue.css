@@ -156,15 +156,18 @@
 }
 
 .nom_livre {
-
+    margin-left: 16px ;
+    margin-bottom: 16px;
     text-decoration: none;
     color: black;
+    ma
 }
 
 .prix {
 
     margin-left: 10px;
 }
+
 
 
 .bas_item {
