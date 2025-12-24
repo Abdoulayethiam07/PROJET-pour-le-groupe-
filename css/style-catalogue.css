@@ -1,31 +1,3 @@
-/* body {
-
-    margin: 0;
-    padding: 0;
-    background-color: #f9f8f5;
-    width: 100%;
-    max-width: 100%;
-
-
-} */
-
-
-
-/* #titre { */
-
-/* width: 100%; */
-/* background-color: #1b3c7d; */
-/* background-color: hsl(220, 70%, 25%);
-    height: 170px;
-    align-items: left;
-    display: flex;
-    flex-direction: column; */
-/* font-size: clamp(1.5rem, 5vw, 3rem); */
-
-
-
-/* } */
-
 /* Css zone de filtres de recherche*/
 
 #zone_filtre {
@@ -38,17 +10,36 @@
 }
 
 .paragraph {
-    padding-left: 50px;
+    width: 80%;
+    margin: auto;
+    margin-top: 25px;
+    margin-bottom: 15px;
     cursor: pointer;
+    color: gray;
+    padding-left: 10px;
 }
 
 #bar_search {
+    font-size: .875rem;
+    line-height: 1.5rem;
+
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    padding-left: .75rem;
+    padding-right: .75rem;
+
+    /* background-color: #f9f8f6; */
+    border-color: #e0e4eb;
+    border-width: 1px;
+    box-sizing: border-box;
+    border-style: solid;
+    border-radius: .50rem;
     width: 100%;
     max-width: 1200px;
-    height: 35px;
-    border-radius: 10px;
-    border: 1px solid gray;
-    padding: 10px;
+    height: 2.5rem;
+    display: flex;
+    margin-top: .5rem;
+    margin-bottom: .5rem;
 }
 
 #cont_select {
@@ -59,10 +50,26 @@
 }
 
 .select {
+    font-size: .875rem;
+    line-height: 1.5rem;
+
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    padding-left: .75rem;
+    padding-right: .75rem;
+
+    /* background-color: #f9f8f6; */
+    border-color: #e0e4eb;
+    border-width: 1px;
+    box-sizing: border-box;
+    border-style: solid;
+    border-radius: .50rem;
     width: 100%;
-    height: 35px;
-    border-radius: 10px;
-    border: 1px solid grey;
+    max-width: 1200px;
+    height: 2.5rem;
+    display: flex;
+    margin-top: .5rem;
+    margin-bottom: .5rem;
 }
 
 
@@ -79,22 +86,18 @@
 }
 
 .cont_img_livres {
-
     height: 270px;
     overflow: hidden;
     /* pour que l'image ne depasse pas la div quand elle grossi*/
-
 }
 
 .img_livres {
-
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
 .img_livres:hover {
-
     transform: scale(1.1);
     /* c'est pour faire groossir l'image quand la souris la survole*/
     transition: transform 0.5s ease;
@@ -103,12 +106,10 @@
 
 
 .item_livre {
-
     height: 450px;
     border-radius: 10px;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
-    margin-bottom: 10px;  
-    
+    margin-bottom: 10px;
 }
 
 .item_livre:hover {
@@ -117,62 +118,61 @@
 }
 
 .haut_item {
-
-
     height: 90px;
     background-color: white;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     padding-bottom: 5px;
-
-
-
 }
 
 .type_livre {
-
     text-decoration: none;
-    font-size: 13px;
+    font-size: .75rem;
+    line-height: 1rem;
     color: black;
-
+    font-weight: 600;
 }
 
 .cont_type_livre {
-
-
-    display: inline-block;
+    display: inline-flex;
     border-radius: 12px;
     padding-right: 10px;
     padding-left: 10px;
+    padding-top: .125rem;
+    padding-bottom: .125rem;
     background-color: #ebb447;
-    margin-left: 7px;
-    margin-top: 7px;
-
+    margin-left: 10px;
+    margin-top: 10px;
+    align-items: center;
 }
 
 .type_livre:hover {
-
     box-shadow: #efc36c 0px 7px 29px 0px;
 }
 
 .nom_livre {
-    margin-left: 16px ;
-    margin-bottom: 16px;
+    display: block;
+    margin-bottom: 10px;
     text-decoration: none;
     color: black;
-    ma
+}
+
+.nom_livre h3 {
+    margin-left: 10px;
+    font-weight: 600;
+}
+
+.nom_livre h3:hover {
+    color: #ebb447;
 }
 
 .prix {
-
     margin-left: 10px;
+    font-size: 1rem;
+    line-height: 1rem;
 }
 
-
-
 .bas_item {
-
-
     height: 90px;
     border-bottom-right-radius: 10px;
     border-bottom-left-radius: 10px;
@@ -180,24 +180,32 @@
 }
 
 .info_livre {
-
-    font-size: 14px;
+    font-size: .875rem;
+    line-height: 1.25rem;
     color: gray;
     margin-left: 10px;
 }
 
 
 @media (max-width: 768px) {
+
+    #zone_filtre {
+        /* margin-top: 30px; */
+        /* display: flex; */
+        /* flex-direction: column; */
+        /* align-items: center; */
+        gap: 6px;
+        /* padding: 0 1rem; */
+    }
+
     #cont_select {
+        /* width: 100%; */
+        /* margin: auto; */
         flex-direction: column;
+        gap: 6px;
     }
 
     .item_livre {
         height: auto;
     }
-}
-
-H3{
-
-    margin-left: 7px;
 }
