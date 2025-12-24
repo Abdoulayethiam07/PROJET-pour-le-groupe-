@@ -1,13 +1,13 @@
-body {
+/* body { */
     /* cursor: none; */
-}
+/* } */
 
 .curseur {
     position: fixed;
     width: 180px;
     height: 180px;
     pointer-events: none;
-    background: url("../Media/5d903aa1cc5fde647e4055b4a46380ed.gif") no-repeat center/contain;
+    /* background: url("../Media/5d903aa1cc5fde647e4055b4a46380ed.gif") no-repeat center/contain; */
 }
 
 .container {

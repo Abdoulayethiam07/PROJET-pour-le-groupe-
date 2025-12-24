@@ -1,4 +1,4 @@
-.container {
+/* .container { */
 
     /* padding: auto;
     margin: auto;
@@ -10,7 +10,7 @@
 
     max-width: 1400px;
     animation: fade-in .5s ease-out; */
-}
+/* } */
 
 .container {
     margin: auto;
